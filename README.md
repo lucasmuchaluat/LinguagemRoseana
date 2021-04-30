@@ -1,4 +1,4 @@
-# Linguagem Roseana em C
+# Linguagem de programação Roseana
 Repositório para entrega da APS de Lógica da Computação 2021.1
 
 ## Objetivo:
@@ -6,7 +6,7 @@ Repositório para entrega da APS de Lógica da Computação 2021.1
 * A linguagem deve ter todas as estruturas básicas de uma linguagem de programação: variáveis, condicionais, loops e funções.
 
 ## A Linguagem
-A ideia consistem em adaptar uma linguagem de programação qualquer para o contexto léxico de Guimarães Rosa, um dos nossos maiores expressionistas literários. [Autor de Grande Sertão Veredas](https://guiadoestudante.abril.com.br/estudo/grande-sertao-veredas-resumo-da-obra-de-guimaraes-rosa/), João Guimarães Rosa foi um é um dos maiores escritores da literatura brasileira e, certamente, um dos mais importantes autores da língua portuguesa, língua que soube como nenhum outro escritor, reinventar. Ele é conhecido por sua tamanha originalidade e habilidade de inventar palavras. Ele, inclusive, possui um dicionário que ajuda os leitores a entenderem sua escrita baseada em neologismos roseanos. Portanto, o projeto adaptará uma linguagem de programação para que amantes da literatura brasileira criem gosto por "codar"!
+A ideia consistem em adaptar uma linguagem de programação qualquer para o contexto léxico de Guimarães Rosa, um dos nossos maiores expressionistas literários. Autor de [Grande Sertão Veredas](https://guiadoestudante.abril.com.br/estudo/grande-sertao-veredas-resumo-da-obra-de-guimaraes-rosa/), João Guimarães Rosa foi um é um dos maiores escritores da literatura brasileira e, certamente, um dos mais importantes autores da língua portuguesa, língua que soube como nenhum outro escritor, reinventar. Ele é conhecido por sua tamanha originalidade e habilidade de inventar palavras. Ele, inclusive, possui um dicionário que ajuda os leitores a entenderem sua escrita baseada em neologismos roseanos. Portanto, o projeto adaptará uma linguagem de programação para que amantes da literatura brasileira criem gosto por "codar"!
 
 ## EBNF:
 ```
