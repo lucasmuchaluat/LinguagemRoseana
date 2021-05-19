@@ -13,6 +13,7 @@ A ideia consistem em adaptar uma linguagem de programação qualquer para o cont
 * **if statement =** Bispar¹ – v.t. – Bisbilhotar; olhar atentamente, prestar atenção.
 * **else statement =** Borra(ô) – s.f. – Resto; sobra. Borra de café.
 * **while statement =** Ramerrão – s.m. – Repetição monótona, enfadonha. “Florzinha já não era lembrada no corre-corre, no ramerrão, no disse-que-disse da cidade” (Lima, Anfrísio. Espinho de Mandacaru, 2009:136).
+* **print =** Escancarar² – v.t. – Exibir; mostrar.
 
 
 ## EBNF:
