@@ -1,5 +1,6 @@
 from modules.lexer import Lexer
 from modules.parser import Parser
+from modules.ast import SymbolTable
 import sys
 
 
@@ -9,8 +10,8 @@ with open("./code.txt", "r") as f:
 lexer = Lexer().get_lexer()
 tokens = lexer.lex(text_input)
 
-for token in tokens:
-    print(token)
+# for token in tokens:
+#     print(token)
 
 pg = Parser()
 pg.parse()

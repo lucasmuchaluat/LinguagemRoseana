@@ -1,1 +1,8 @@
-escancarar(4);
+{   x = 1;
+    y = 0;
+    bispar(x==2){
+        escancarar(x);
+    } borra{
+        escancarar(y);
+    }
+}

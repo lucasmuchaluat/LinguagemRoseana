@@ -18,19 +18,19 @@ A ideia consistem em adaptar uma linguagem de programação qualquer para o cont
 
 ## EBNF:
 ```
-BLOCK = { COMMAND } ;
-COMMAND = ( λ | ASSIGNMENT | PRINT | WHILE | IF | RETURN ), ";" ;
-WHILE = "ramerrao", "(", CONDITION, ")", "{", BLOCK, "}" ;
-IF = "bispar", "(", CONDITION, ")", "{", BLOCK, "}", { "borra", "{", BLOCK, "}" } ;
-CONDITION = ( EXPRESSION, OPERATOR, EXPRESSION | OPERATOR, EXPRESSION) ;
-OPERATOR = ( "==" | "!=" | ">" | ">=" | "<" | "<=" | "!" | "&&" | "||" )
-FUNCTION = "batoque", IDENTIFIER, "(", PARAMETER, ")", "{" BLOCK "}" ;
-PARAMETER = ( IDENTIFIER | NUMBER )
-ASSIGNMENT = IDENTIFIER, "=", EXPRESSION ;
-PRINT = "println", "(", EXPRESSION, ")" ;
+BLOCK = "{", { COMMAND }, "}" ;
+COMMAND = ( λ | ASSIGNMENT | PRINT | WHILE | IF | BLOCK | RETURN ), ";" ;
+ASSIGNMENT = IDENTIFIER, "=", OREXPR ;
+PRINT = "escancarar", "(", OREXPR, ")" ;
+WHILE = "ramerrao", "(", OREXPR, ")", "{", COMMAND, "}" ;
+IF = "bispar", "(", OREXPR, ")", "{", COMMAND, "}", { "borra", "{", COMMAND, "}" } ;
+OREXPR = ANDEXPR, { "|", ANDEXPR } ;
+ANDEXPR = EQEXPR, { "&&", EQEXPR } ;
+EQEXPR = RELEXPR, { "==", RELEXPR } ;
+RELEXPR = EXPRESSION, { (">" | "<"), EXPRESSION } ;
 EXPRESSION = TERM, { ("+" | "-"), TERM } ;
 TERM = FACTOR, { ("*" | "/"), FACTOR } ;
-FACTOR = (("+" | "-"), FACTOR) | NUMBER | "(", EXPRESSION, ")" | IDENTIFIER ;
+FACTOR = (("+" | "-" | "!"), FACTOR) | NUMBER | "(", OREXPR, ")" | IDENTIFIER ;
 IDENTIFIER = LETTER, { LETTER | DIGIT | "_" } ;
 NUMBER = DIGIT, { DIGIT } ;
 LETTER = ( a | ... | z | A | ... | Z ) ;
