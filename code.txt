@@ -1,8 +1,30 @@
-{   x = 1;
-    y = 0;
-    bispar(x==2){
-        escancarar(x);
-    } borra{
-        escancarar(y);
+int soma(int x, int y)
+{
+    int a;
+    a = x + y;
+    escancarar(a);
+    batoque a;
+}
+
+int fatorial(int x)
+{
+    bispar (x < 0)
+    {
+        batoque -1;
     }
+    bispar (x == 0 || x == 1)
+    {
+        batoque 1;
+    }
+    batoque x * fatorial(x - 1);
+}
+int main()
+{
+    int a;
+    int b;
+    a = 3;
+    b = soma(a, 4);
+    escancarar(a);
+    escancarar(b);
+    escancarar(fatorial(3));
 }
